@@ -1,12 +1,13 @@
 import './App.css';
 import Header from './Components/Header';
-import sectionCurriculo from './Components/sectionCurriculo';
+import SectionCurriculo from './Components/SectionCurriculo';
+
 
 function App() {
   return (
     <>
     <Header />
-    <sectionCurriculo />
+    <SectionCurriculo />
     </>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Section = styled.section`
-    background:tomato;
+    background:#9966cc;
 `
 
 
@@ -18,6 +18,7 @@ const Div = styled.div`
 
 const H1 = styled.h1`
     font-size: 1.5rem;
+    color:white;
    
   
 `
