@@ -6,50 +6,58 @@ import curriculo from '../Assets/teste.pdf'
 const Container = styled.div`
     padding-top:1rem;
     width:960px;
-    margin: 0 auto;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    grid-template-areas:" esquerda direita";
-    grid-column-gap:25px;
+    margin: 25px auto;
+    display:flex;
     align-items:center;
+    
 
 
 
 `
 
-const divEsquerda = styled.div`
+const Divesquerda = styled.div`
 
-    grid-area:esquerda;
-
+    flex:2;
     
-
+    p{
+        padding-top:15px;
+        display:flex;
+        flex-wrap:wrap;
+        font-size:1.3rem;
+        letter-spacing:1.2px;
+        width:75%;
+        padding-left:1%;
+    }
 `
-const Img = styled.img`
 
-    max-width:100%;
-    width:20vw;
+const Divdireita = styled.div`
     
+    flex:1;
     
-`
-const divDireita = styled.div`
-    
-    grid-area: direita;
-
-   
-
-`
-const P = styled.p`
-    font-size:1.1rem;
-    
+    img{
+        display:block;
+        width:20vw;
+    }
 `
 const Acurriculo = styled.a`
+    margin-top:50px;
     width:50%;
     padding:3%;
+    font-size:1.2rem;
     display:flex;
     justify-content:center;
-    justify-items:center;
-    border: solid #9966cc 2px;
+    border: solid #9966cc 3px;
     border-radius:25px;
+    color:#9966cc;
+
+    :hover{
+        background:#9966cc;
+        color:white;
+        --moz-transform: scale(1.1);
+        --webkit-transform: scale(1.1);
+        transform: scale(1.1) ;
+        box-shadow: 10px 10px 10px grey;
+    }
     
 `
 
@@ -58,21 +66,21 @@ const SectionCurriculo = () => {
 
             <Container>  
 
-                <divEsquerda>
+                <Divesquerda>
 
-                    <P>Desenvolvedor &lt;/ Front-End &gt;</P>
+                    <h2>Desenvolvedor &lt;/ Front-End &gt;</h2>
 
-                    <P>
+                    <p>
                         Olá! Meu nome é Matheus e sou desenvolvedor Front-End, esse é um site portifólio para demonstrar alguns projetos, skills e também formas de contato direto.
-                    </P>
-                    <Acurriculo href={curriculo} download="testeCurriculo.pdf">Download Text</Acurriculo>
+                    </p>
+                    <Acurriculo href={curriculo} download="testeCurriculo.pdf">BAIXAR CURRÍCULO</Acurriculo>
 
-                </divEsquerda>
-                <divDireita>
+                </Divesquerda>
+                <Divdireita>
 
-                    <Img src={img}></Img>
+                    <img src={img}></img>
 
-                </divDireita>    
+                </Divdireita>    
 
             </Container>
         
