@@ -35,8 +35,10 @@ const Divdireita = styled.div`
     flex:1;
     
     img{
+        max-width:100%;
+        min-width:150px;
         display:block;
-        width:20vw;
+        width:22vw;
     }
 `
 const Acurriculo = styled.a`

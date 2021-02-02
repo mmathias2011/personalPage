@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import * as Scroll from 'react-scroll'
+
 
 const Section = styled.section`
     background:#9966cc;
@@ -27,39 +29,43 @@ const Ul = styled.ul`
 display:flex;
 flex-wrap:wrap;
     li{
+        color:white;
         font-size: 1.2rem;
         padding: 0 20px; 
-    }
-
-    
-`
-const A = styled.a`
-    color:white;
-    :hover{
+        :hover{
+        cursor:pointer;
         background:white;
         border-radius:5px;
         color:#9966cc;
         padding:10px;
         box-shadow: 5px 10px 10px black;
         transform: scale(1.1);
+        }
 
     }
+
+    
+`
+const A = styled.a`
+    color:white;
+    
+    
 `
 
 
 const Header = () => {
     return (
-        <Section>    
-            <Div>
-                <H1> &lt;/ Matheus Matias &gt;</H1>
-                <Ul>
-                    <li><A href="sobre">Sobre</A></li>
-                    <li><A href="skills">Skills</A></li>
-                    <li><A href="lab">laboratório</A></li>
-                    <li><A href="contato">Contato</A></li>
-                </Ul>
-            </Div>
-        </Section>    
+            <Section>    
+                <Div>
+                    <H1> &lt;/ Matheus Matias &gt;</H1>
+                    <Ul>
+                          <li><Scroll.Link to="sobre" smooth={true}>Sobre</Scroll.Link></li>
+                          <li><Scroll.Link to="skill">Skills</Scroll.Link></li>
+                          <li><Scroll.Link to="laboratorio">Laboratório</Scroll.Link></li>
+                          <li><Scroll.Link to="contato">Contato</Scroll.Link></li>
+                    </Ul>
+                </Div>
+            </Section>   
     )
 }
 
