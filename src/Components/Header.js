@@ -4,12 +4,9 @@ import * as Scroll from 'react-scroll'
 
 
 const Section = styled.section`
-    position:fixed;
-    left: 0;
-    top:0;
+    
     background:#9966cc;
     padding: 10px 0;
-    overflow:hidden;
     width:100%;
 `
 
