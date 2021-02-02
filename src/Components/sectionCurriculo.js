@@ -4,7 +4,7 @@ import img from '../Assets/firstimg.jpg'
 import curriculo from '../Assets/teste.pdf'
 
 const Container = styled.div`
-    padding-top:1rem;
+    padding-top:100px;
     width:960px;
     margin: 25px auto;
     display:flex;
