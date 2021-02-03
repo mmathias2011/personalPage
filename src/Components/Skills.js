@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { VscSettingsGear } from 'react-icons/vsc'
 import html from '../Assets/html.svg'
 import css from '../Assets/css.svg'
 import Js from '../Assets/Js.svg'
@@ -70,7 +71,7 @@ const Skills = () => {
         <>
         <Container data-aos="fadeIn" id="skills">
             <Divskill> 
-                <h2>Skills</h2>
+                <h2><VscSettingsGear/> Skills</h2>
             </Divskill>
             <Section>
                 <div>
