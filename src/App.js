@@ -1,5 +1,6 @@
 import './App.css';
 import Contato from './Components/Contato';
+import Footer from './Components/Footer';
 import Header from './Components/Header';
 import SectionCurriculo from './Components/SectionCurriculo';
 import Skills from './Components/Skills';
@@ -13,6 +14,7 @@ function App() {
     <Sobre />
     <Skills />
     <Contato />
+    <Footer />
     </>
   );
 }

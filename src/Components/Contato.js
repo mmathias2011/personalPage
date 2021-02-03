@@ -27,6 +27,7 @@ const Container = styled.div`
 
     width:960px;
     margin:0 auto;
+    margin-bottom:10%;
    
 `
 const Divcentral = styled.div`
