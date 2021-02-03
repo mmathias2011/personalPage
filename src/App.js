@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './Components/Header';
 import SectionCurriculo from './Components/SectionCurriculo';
+import Skills from './Components/Skills';
 import Sobre from './Components/Sobre'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <Header />
     <SectionCurriculo />
     <Sobre />
+    <Skills />
     </>
   );
 }

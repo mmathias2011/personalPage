@@ -60,9 +60,9 @@ const Header = () => {
                     <H1> &lt;/ Matheus Matias &gt;</H1>
                     <Ul>
                           <li><Scroll.Link to="sobre" smooth={true}>Sobre</Scroll.Link></li>
-                          <li><Scroll.Link to="skill">Skills</Scroll.Link></li>
-                          <li><Scroll.Link to="laboratorio">Laboratório</Scroll.Link></li>
-                          <li><Scroll.Link to="contato">Contato</Scroll.Link></li>
+                          <li><Scroll.Link to="skills" smooth={true}>Skills</Scroll.Link></li>
+                          <li><Scroll.Link to="laboratorio" smooth={true}>Laboratório</Scroll.Link></li>
+                          <li><Scroll.Link to="contato" smooth={true}>Contato</Scroll.Link></li>
                     </Ul>
                 </Div>
             </Section>   
