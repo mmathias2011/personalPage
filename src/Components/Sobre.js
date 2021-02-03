@@ -15,7 +15,8 @@ import { useEffect } from 'react'
 
 const Divsobre = styled.div`
     width:960px;
-    margin:45px auto;
+    margin:0 auto;
+    margin-top:10%;
     border-bottom:#9966ccc4 solid 2px; 
     display:flex;
     justify-content:center;
@@ -26,7 +27,7 @@ const Divsobre = styled.div`
 const Section = styled.section`
 
     width:960px;
-    margin: 0 auto;
+    margin: 5% auto;
     padding-top:35px;
     display:flex;
     align-items:center;

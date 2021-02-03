@@ -1,4 +1,5 @@
 import './App.css';
+import Contato from './Components/Contato';
 import Header from './Components/Header';
 import SectionCurriculo from './Components/SectionCurriculo';
 import Skills from './Components/Skills';
@@ -11,6 +12,7 @@ function App() {
     <SectionCurriculo />
     <Sobre />
     <Skills />
+    <Contato />
     </>
   );
 }

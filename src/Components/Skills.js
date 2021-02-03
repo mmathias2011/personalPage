@@ -14,7 +14,7 @@ import "aos/dist/aos.css"
 const Container = styled.div`
 
     width:960px;
-    margin:0 auto;
+    margin:10% auto;
     
 `
 
@@ -32,6 +32,7 @@ const Divskill = styled.div`
 const Section = styled.section`
 
     display:flex;
+    margin-top:100px;
     
     div{
         width:350px;
