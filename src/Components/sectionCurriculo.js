@@ -62,31 +62,21 @@ const Acurriculo = styled.a`
     }
     
 `
-
 const SectionCurriculo = () => {
     return (
-
-            <Container>  
-
-                <Divesquerda>
-
-                    <h2>Desenvolvedor &lt;/ Front-End &gt;</h2>
-
+         <Container>  
+             <Divesquerda>
+                <h2>Desenvolvedor &lt;/ Front-End &gt;</h2>
                     <p>
                         Olá! Meu nome é Matheus e sou desenvolvedor Front-End, esse é um site portifólio para demonstrar alguns projetos, skills e também formas de contato direto.
                     </p>
-                    <Acurriculo href={curriculo} download="testeCurriculo.pdf">BAIXAR CURRÍCULO</Acurriculo>
+                <Acurriculo href={curriculo} download="testeCurriculo.pdf">BAIXAR CURRÍCULO</Acurriculo>
+            </Divesquerda>
+            <Divdireita>
 
-                </Divesquerda>
-                <Divdireita>
-
-                    <img src={img}></img>
-
-                </Divdireita>    
-
+                <img alt="PC" src={img}></img>
+            </Divdireita>
             </Container>
-        
-    )
-}
-
+        )
+    }
 export default SectionCurriculo

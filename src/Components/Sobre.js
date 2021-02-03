@@ -12,7 +12,6 @@ import Aos from 'aos'
 import "aos/dist/aos.css"
 import { useEffect } from 'react'
 
-
 const Divsobre = styled.div`
     width:960px;
     margin:0 auto;
@@ -25,27 +24,23 @@ const Divsobre = styled.div`
     }
 `
 const Section = styled.section`
-
     width:960px;
     margin: 5% auto;
     padding-top:35px;
     display:flex;
     align-items:center;
 `
-
 const Perfil = styled.div`
     display:flex;
     flex: 1;
     flex-direction:column;
     align-items:center;
     row-gap:10px;
-
     img{
         width:200px;
         height: 200px;
         border-radius:50%;
     }
-
     p{
         font-size:1.5rem;
     }
@@ -53,26 +48,22 @@ const Perfil = styled.div`
 const Divsocial = styled.div`
     padding:20px;
     display:flex;
-    
 `
 const Ul = styled.ul`
     display:flex;
     margin:0;
     padding:0;
-    
      li{
-         padding:10px;
-     }
+        padding:10px;
+    }
 `
 const Divdireita = styled.div`
-
     flex: 2;
     border-left:#9966ccc4 solid 2px; 
     padding:0 25px;
     div{
         display:flex;
         flex-direction:column;
-        
     }
     div h3{
         text-align:center;
@@ -82,57 +73,42 @@ const P1 = styled.p`
         padding-left:15px;
         font-size:1.1rem;
         line-height:1.7rem;
-
         ::before{
-        content:"💡";
-        margin-right:15px;
+            content:"💡";
+            margin-right:15px;
         }
-    
 `
 const P2 = styled.p`
-        padding-left:15px;
-        font-size:1.1rem;
-        line-height:1.7rem;
-        ::before{
+    padding-left:15px;
+    font-size:1.1rem;
+    line-height:1.7rem;
+    ::before{
         content:"🕙";
         margin-right:15px;
-        }
+    }
 `
 const P3 = styled.p`
-        padding-left:15px;
-        font-size:1.1rem;
-        line-height:1.7rem;
-        ::before{
+    padding-left:15px;
+    font-size:1.1rem;
+    line-height:1.7rem;
+    ::before{
         content:"😉";
         margin-right:15px;
-        }
+    }
 `
-
-
-
 const  Sobre = () =>{
-
     useEffect(() => {
-        
         Aos.init({ duration: 3000 });
-        }, []);
-    
+    }, []);
     return (
         <>
         <Divsobre data-aos="fade-left" id="sobre">
-
             <h2><VscPinned/> Sobre</h2>
-
         </Divsobre>
         <Section data-aos="fade-up">  
-            
-        
             <Perfil>
-
-                <img src={img} />
-
+                <img alt="Matheus" src={img} />
                 <p>Matheus Matias</p>
-
                 <Divsocial>
                     <Ul>
                         <li><IconContext.Provider value={{size:"2.1rem", color: "black", margin:"150px"}} ><a href="https://github.com/mmathias2011" title="Github"><VscGithub /></a></IconContext.Provider></li>
@@ -141,7 +117,6 @@ const  Sobre = () =>{
                         <li><IconContext.Provider value={{size:"2.1rem", color: "green"}}><a href="http://api.whatsapp.com/send?1=pt_BR&phone=5511991442672" title="Whatsapp"><RiWhatsappFill /></a></IconContext.Provider></li>
                    </Ul>
                 </Divsocial>
-               
             </Perfil>
             <Divdireita>
                 <div>
@@ -157,18 +132,11 @@ const  Sobre = () =>{
                         </P2>
                         <P3>
                             Sou comunicativo e tenho extrema facilidade de trabalho em equipe, tanto por relacionamento profissional quanto por inteligência emocional, sabendo lidar com pessoas e situações adversas.
-                        </P3>
-                    
+                        </P3> 
                 </div>
-                
-
-            </Divdireita>
-                
+            </Divdireita>    
         </Section>
-        
-
-    </>
+        </>
     )
 }
-
 export default Sobre
