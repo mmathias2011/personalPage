@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import img from '../Assets/firstimg.jpg'
-import curriculo from '../Assets/teste.pdf'
+import curriculo from '../Assets/Matheus Matias Neves.pdf'
 
 const Container = styled.div`
     padding-top:100px;
@@ -9,8 +9,6 @@ const Container = styled.div`
     margin: 25px auto;
     display:flex;
     align-items:center;
-    
-
 
 
 `
@@ -59,10 +57,9 @@ const Acurriculo = styled.a`
         --webkit-transform: scale(1.1);
         transform: scale(1.1) ;
         box-shadow: 10px 10px 10px grey;
-    }
-    
+    } 
 `
-const SectionCurriculo = () => {
+const Curriculo = () => {
     return (
          <Container>  
              <Divesquerda>
@@ -70,7 +67,7 @@ const SectionCurriculo = () => {
                     <p>
                         Olá! Meu nome é Matheus e sou desenvolvedor Front-End, esse é um site portifólio para demonstrar alguns projetos, skills e também formas de contato direto.
                     </p>
-                <Acurriculo href={curriculo} download="testeCurriculo.pdf">BAIXAR CURRÍCULO</Acurriculo>
+                <Acurriculo href={curriculo} download="Matheus Matias Neves.pdf">BAIXAR CURRÍCULO</Acurriculo>
             </Divesquerda>
             <Divdireita>
 
@@ -79,4 +76,4 @@ const SectionCurriculo = () => {
             </Container>
         )
     }
-export default SectionCurriculo
+export default Curriculo;
