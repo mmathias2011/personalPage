@@ -11,6 +11,10 @@ const Container = styled.div`
     p{
         font-size:1.5rem;
     }
+
+    @media  screen and  (max-width: 560px){
+        margin:0 auto;
+    }
 `
 const Footer = () => {
     return (
