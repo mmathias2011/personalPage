@@ -9,7 +9,7 @@ const Container = styled.div`
     margin: 25px auto;
     display:flex;
     align-items:center;
-
+    
 
 `
 
@@ -26,6 +26,10 @@ const Divesquerda = styled.div`
         width:75%;
         padding-left:1%;
     }
+    @media screen and(max-width:560px){
+        display:none;
+        background-color:red;
+    }
 `
 
 const Divdireita = styled.div`
@@ -38,6 +42,7 @@ const Divdireita = styled.div`
         display:block;
         width:22vw;
     }
+    
 `
 const Acurriculo = styled.a`
     margin-top:50px;
@@ -58,6 +63,7 @@ const Acurriculo = styled.a`
         transform: scale(1.1) ;
         box-shadow: 10px 10px 10px grey;
     } 
+    
 `
 const Curriculo = () => {
     return (
@@ -65,7 +71,7 @@ const Curriculo = () => {
              <Divesquerda>
                 <h2>Desenvolvedor &lt;/ Front-End &gt;</h2>
                     <p>
-                        Olá! Meu nome é Matheus e sou desenvolvedor Front-End, esse é um site portifólio para demonstrar alguns projetos, skills e também formas de contato direto.
+                        Olá! Meu nome é Matheus e sou desenvolvedor Front-End, esse é um site exemplo para demonstrar algumas skills e também formas de contato direto.
                     </p>
                 <Acurriculo href={curriculo} download="Matheus Matias Neves.pdf">BAIXAR CURRÍCULO</Acurriculo>
             </Divesquerda>
@@ -73,7 +79,7 @@ const Curriculo = () => {
 
                 <img alt="PC" src={img}></img>
             </Divdireita>
-            </Container>
+        </Container>
         )
     }
 export default Curriculo;

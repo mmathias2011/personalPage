@@ -86,16 +86,6 @@ const DivMenuMobile = styled.div`
 #on{
     display:block;
     width:100%;
-    animation: smooth 5s forwards;
-
-    @keyframes smooth {
-        from{
-            left:-100px;
-        }
-        to{
-            right:100px;
-        }
-    }
     
 }
 
@@ -122,7 +112,7 @@ const Header = () => {
                     <Ul>
                         <li><Scroll.Link to="sobre" smooth={true}>Sobre</Scroll.Link></li>
                         <li><Scroll.Link to="skills" smooth={true}>Skills</Scroll.Link></li>
-                        <li><Scroll.Link to="laboratorio" smooth={true}>Laboratório</Scroll.Link></li>
+                        
                         <li><Scroll.Link to="contato" smooth={true}>Contato</Scroll.Link></li>
                     </Ul>
                 </Div>
